@@ -207,8 +207,7 @@ export default function App() {
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   // Video source state: supports local file (/bg-video.mp4), drag-and-dropped video, or external link
-  const DEFAULT_FALLBACK_VIDEO =
-    'https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260826_041744_63efcd78-bf7d-4039-99e2-2461e8a61903.mp4';
+  const DEFAULT_FALLBACK_VIDEO = '/bg-video.mp4';
   const [videoSrc, setVideoSrc] = useState<string>(DEFAULT_FALLBACK_VIDEO);
 
   // Load persisted video from IndexedDB on initial mount
